@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "maestro-sdk"
+version = "0.1.0"
+description = "Python SDK for the Maestro Blockchain Indexer API"
+authors = ["Varderes Barsegyan <vbarsegyan@gomaestro.org>"]
+license = "Apache-2.0"
+readme = "README.md"
+packages = [{include = "maestro_sdk"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
