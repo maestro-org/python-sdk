@@ -2,12 +2,24 @@ from .request import get_request
 from dataclasses import dataclass
 from dacite import from_dict
 
-
 @dataclass
 class ChainTip:
     block_hash: str
     slot: int
     height: int
+
+@dataclass
+class EraHistory:
+    pass
+
+@dataclass
+class ProtocolParams:
+    pass
+
+@dataclass
+class SystemStart:
+    pass
+
 
 class General():
     def chain_tip(self, maestro_session):

@@ -29,8 +29,38 @@
 </p>
 
 # Getting Started
+1. [TODO] Install `maestro-sdk` package
+```
+# pip
+pip install maestro-sdk
+
+# poetry
+poetry add maestro-sdk
+```
+
+2. Create a [Maestro API key](https://docs.gomaestro.org/docs/Getting-started/Sign-up-login).
+3. [TODO] Import the package
+```python
+from maestro_sdk import MaestroSession
+```
+
+## Local Development
+1. Get [poetry](https://python-poetry.org/docs/#installation)
+2. Install package: `poetry install`
+3. Lock dependencies: `poetry lock`
+4. Run Python shell: `poetry run python`
+```bash
+>>> from maestro_sdk import MaestroSession
+>>> maestro = MaestroSession("mainnet", "opIqovS7Xdp4o876Ml7c4cbwvm7cETgV")
+>>> chain_tip = maestro.general.chain_tip(maestro)
+>>> chain_tip
+ChainTip(block_hash='7ed2439755445de6c42984de49c15b0a13326da8a5666e8050cf39fbfd295a7c', slot=94249308, height=8857750)
+```
 
 # Documentation
+* [TODO] [Read the Docs](https://python-sdk.gomaestro.org/)
+* [Maestro public docs](https://docs.gomaestro.org/)
+* [Maestro API reference](https://reference.gomaestro.org/)
 
 # Contributing
 

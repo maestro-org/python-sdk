@@ -1,7 +1,9 @@
-from handlers.general import General
+from .handlers.general import General
 
 class MaestroSession():
     def __init__(self, network: str, api_key: str, version: str = "v0") -> None:
+        if not network:
+            raise Exception("Network not specified. Use 'preview', 'preprod, or 'mainnet'.")
         self.network = network
         self.api_key = api_key
         self.version = version
@@ -40,6 +42,5 @@ class MaestroSession():
         pass
 
 if __name__ == "__main__": 
-    maestro = MaestroSession("mainnet", "")
+    maestro = MaestroSession("mainnet", "opIqovS7Xdp4o876Ml7c4cbwvm7cETgV")
     chain_tip = maestro.general.chain_tip(maestro)
-    breakpoint()
