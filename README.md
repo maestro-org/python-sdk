@@ -51,7 +51,7 @@ from maestro_sdk import MaestroSession
 4. Run Python shell: `poetry run python`
 ```bash
 >>> from maestro_sdk import MaestroSession
->>> maestro = MaestroSession("mainnet", "opIqovS7Xdp4o876Ml7c4cbwvm7cETgV")
+>>> maestro = MaestroSession("mainnet", "<API_KEY>")
 >>> chain_tip = maestro.general.chain_tip(maestro)
 >>> chain_tip
 ChainTip(block_hash='7ed2439755445de6c42984de49c15b0a13326da8a5666e8050cf39fbfd295a7c', slot=94249308, height=8857750)
