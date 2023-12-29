@@ -38,7 +38,7 @@ pip install maestro-sdk
 poetry add maestro-sdk
 ```
 
-2. Create a [Maestro API key](https://docs.gomaestro.org/docs/Getting-started/Sign-up-login).
+2. Create a [Maestro API key](https://docs.gomaestro.org/Getting-started/Sign-up-login).
 3. [TODO] Import the package
 ```python
 from maestro_sdk import MaestroSession
@@ -58,9 +58,8 @@ ChainTip(block_hash='7ed2439755445de6c42984de49c15b0a13326da8a5666e8050cf39fbfd2
 ```
 
 # Documentation
-* [TODO] [Read the Docs](https://python-sdk.gomaestro.org/)
 * [Maestro public docs](https://docs.gomaestro.org/)
-* [Maestro API reference](https://reference.gomaestro.org/)
+* [Maestro API reference](https://docs.gomaestro.org/maestro-api-introduction)
 
 # Contributing
 
